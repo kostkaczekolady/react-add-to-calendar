@@ -44,6 +44,7 @@ export default class helpers {
         calendarUrl += "&location=" + encodeURIComponent(event.location);
         calendarUrl += "&text=" + encodeURIComponent(event.title);
         calendarUrl += "&details=" + encodeURIComponent(event.description);
+        calendarUrl += "&allDay=true";
         break;
 
       case "yahoo":
@@ -55,6 +56,7 @@ export default class helpers {
         calendarUrl += "&dur=" + duration;
         calendarUrl += "&desc=" + encodeURIComponent(event.description);
         calendarUrl += "&in_loc=" + encodeURIComponent(event.location);
+        calendarUrl += "&all_day_event=true";
         break;
 
       case "outlookcom":
